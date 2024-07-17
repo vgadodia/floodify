@@ -4,7 +4,7 @@ from sklearn.metrics import accuracy_score
 from sklearn.ensemble import RandomForestClassifier
 import pickle
 
-data = pd.read_csv("./final_data.csv")
+data = pd.read_csv("final_data.csv")
 y = data['class']
 X = data.drop('class', axis=1)
 X_train, X_test, y_train, y_test = train_test_split(X, y,test_size=0.2)
